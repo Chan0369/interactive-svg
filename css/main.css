@@ -36,3 +36,40 @@ html {
   stroke-linejoin:round;
   stroke-miterlimit:10;
 }
+
+.left-ear {
+  transition: all 1s linear;
+  transform-origin: 100px 80px;
+}
+
+.head:hover .left-ear {
+  transform: rotate(10deg);
+}
+
+.eyes {
+  animation: back-and-forth 1500ms linear infinite;
+}
+
+@keyframes back-and-forth {
+
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(35px, 0);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  75% {
+    transform: translate(-35px, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+
+}
