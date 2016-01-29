@@ -46,6 +46,15 @@ html {
   transform: rotate(10deg);
 }
 
+.right-ear {
+  transition: all 1s linear;
+  transform-origin: 100px 80px;
+}
+
+.head:hover .right-ear {
+  transform: rotate(-7deg);
+}
+
 .eyes {
   animation: back-and-forth 1500ms linear infinite;
 }
